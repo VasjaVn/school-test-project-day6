@@ -1,6 +1,6 @@
 {
   "name": "myKoajsRestApp",
-  "version": "0.2.1",
+  "version": "0.2.12",
   "description": "A simple Koajs REST Application Skeleton",
   "author": {
     "name": "Oleg Cherniy",
@@ -17,7 +17,8 @@
     "koa-render": "*",
     "koa-router": "*",
     "q": "^1.2.0",
-    "redis": "^0.12.1"
+    "redis": "^0.12.1",
+    "memcached": "2.0.0"
   },
   "devDependencies": {
     "jasmine-node": "*",
