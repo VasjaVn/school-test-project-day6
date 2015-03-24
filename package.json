@@ -16,9 +16,9 @@
     "koa-bodyparser": "*",
     "koa-render": "*",
     "koa-router": "*",
+    "memcached": "^2.0.0",
     "q": "^1.2.0",
-    "redis": "^0.12.1",
-    "memcached": "2.0.0"
+    "redis": "^0.12.1"
   },
   "devDependencies": {
     "jasmine-node": "*",

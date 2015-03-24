@@ -1,5 +1,5 @@
 
-var memcached = require('./helpers/memcached');
+var memcached = require('../helpers/memcached');
 
 (function () {
 

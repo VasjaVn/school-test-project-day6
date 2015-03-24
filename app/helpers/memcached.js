@@ -26,9 +26,9 @@ module.exports = {
                 deffered.reject( err );
             } else {
                 memcached.touch( key, ttl, function( err ) {
-                    err ? deffered.reject( err ) : deffered.resolve();
+                    err ? deffered.reject( err ) : deffered.resolve(true);
                 });
-                deffered.resolve(); //!!!!!!!??????
+                deffered.resolve(true);
             }
         });
 
@@ -39,7 +39,7 @@ module.exports = {
         var deffered = Q.defer();
 
         memcached.del( key, function( err ) {
-            err ? deffered.reject( err ) : deffered.resolve();
+            err ? deffered.reject( err ) : deffered.resolve(true);
         });
 
         return deffered.promise;
